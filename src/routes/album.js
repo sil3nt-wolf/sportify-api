@@ -1,1 +1,128 @@
-function _0x3f50(_0x591f96,_0xe2aded){_0x591f96=_0x591f96-(0x3*0x3ab+0x5b0+-0xfc6);const _0x8f4d39=_0x49ab();let _0x131f55=_0x8f4d39[_0x591f96];if(_0x3f50['NotCaO']===undefined){var _0x1251c1=function(_0x4e7bb2){const _0x255b79='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x47052f='',_0x18faa3='';for(let _0x1fa3e0=-0xa1*0x3+-0x8c8+0xaab,_0x5ab869,_0x306de6,_0x60a015=0x32c+0x1edf*0x1+-0x220b;_0x306de6=_0x4e7bb2['charAt'](_0x60a015++);~_0x306de6&&(_0x5ab869=_0x1fa3e0%(-0x95d*0x3+-0x207*-0x7+-0x1a*-0x89)?_0x5ab869*(0x1cef+-0xadc+0x1b*-0xa9)+_0x306de6:_0x306de6,_0x1fa3e0++%(0x550+-0x1c6+-0x386))?_0x47052f+=String['fromCharCode'](-0x1aed*0x1+-0xb0e+0x67f*0x6&_0x5ab869>>(-(-0x17ea+-0xf3f+0x10f*0x25)*_0x1fa3e0&0x16*0x151+-0x799+-0x71d*0x3)):-0xb78+-0x1c3d*-0x1+-0x10c5){_0x306de6=_0x255b79['indexOf'](_0x306de6);}for(let _0x20630a=-0x18*0xa3+-0x2073+0x2fbb,_0x327e54=_0x47052f['length'];_0x20630a<_0x327e54;_0x20630a++){_0x18faa3+='%'+('00'+_0x47052f['charCodeAt'](_0x20630a)['toString'](0xf85+-0x1*-0x13d+-0x10b2))['slice'](-(0x112+-0x59a+0x48a));}return decodeURIComponent(_0x18faa3);};_0x3f50['fatgVc']=_0x1251c1,_0x3f50['EEgyTL']={},_0x3f50['NotCaO']=!![];}const _0x1af8f8=_0x8f4d39[-0x12d7*0x1+-0x746+0x3bb*0x7],_0x286767=_0x591f96+_0x1af8f8,_0x4ea5a2=_0x3f50['EEgyTL'][_0x286767];return!_0x4ea5a2?(_0x131f55=_0x3f50['fatgVc'](_0x131f55),_0x3f50['EEgyTL'][_0x286767]=_0x131f55):_0x131f55=_0x4ea5a2,_0x131f55;}function _0x49ab(){const _0x547ee=['nZqYng5qEMHkEq','qMvHCMvYia','yw5Hz2vY','CgfYyw1Z','mtyZmtq3mfn0rLnYAG','u3bVDgLMEsb0BW','BgfIBguSihbSzq','ANnVBG','mti1mJC5nZbJuNPoAfq','lI4VCMvZCg9UCW','DNnPC1q','mtG5mJq4ywPVD1fr','nenjC1vgyG','otHwDujZEu8','C3rHDhvZ','y29Tl3yXl2fSyG','BwvZC2fNzq','ndu5mdH1tw5Ywee','nZi1ntjRBfzHtvC','Ahr0Chm6lY9HCa','zxHWB3j0CW','lZPPza','uM91DgvY','mZyWndm4zgjcAgnw','B1rZD2O','Dw1ZlW','zxHWCMvZCW','nta0B0fSrM1q','lI4VDg9Rzw4TBq','A2vUihvUyxzHAq'];_0x49ab=function(){return _0x547ee;};return _0x49ab();}(function(_0x4258d3,_0x4a357f){const _0x3f50cc={_0x1d22a2:0x403,_0x5d39e7:0x2d7,_0x3f095e:0x2d5,_0x43ad5c:0x3f8,_0x5ca448:0x3fb,_0x2a37c3:0x2db,_0x36f33f:0x2d8,_0x58120d:0x2da,_0x2670d6:0x40c,_0x403b09:0x40a,_0x1962bf:0x3fc,_0x1d642c:0x407},_0x245c31={_0x289d66:0x1d2},_0x5c8c9a={_0x41c77c:0x30b},_0x4c58bd=_0x4258d3();function _0x24980a(_0x53d078,_0x34e166){return _0x3f50(_0x53d078-_0x5c8c9a._0x41c77c,_0x34e166);}function _0x1e0354(_0xa45c12,_0x3dd6c4){return _0x3f50(_0xa45c12-_0x245c31._0x289d66,_0x3dd6c4);}while(!![]){try{const _0x557751=-parseInt(_0x24980a(0x40a,_0x3f50cc._0x1d22a2))/(0x5*0x1be+-0x7dd+0xd8*-0x1)+parseInt(_0x1e0354(_0x3f50cc._0x5d39e7,_0x3f50cc._0x3f095e))/(-0x1055+-0xb03+0x1*0x1b5a)+-parseInt(_0x24980a(_0x3f50cc._0x43ad5c,_0x3f50cc._0x5ca448))/(0x137b+-0x1c52+-0x67*-0x16)*(parseInt(_0x1e0354(0x2d2,_0x3f50cc._0x2a37c3))/(-0x37*-0x62+0x2537+0x3a41*-0x1))+-parseInt(_0x24980a(0x403,0x412))/(0x14d8+-0x17ed+0x31a)+parseInt(_0x1e0354(_0x3f50cc._0x36f33f,_0x3f50cc._0x58120d))/(-0x1d3f+0xd*0x256+0x1*-0x119)*(-parseInt(_0x24980a(_0x3f50cc._0x2670d6,_0x3f50cc._0x403b09))/(-0xe4c+0x26fc+-0x18a9))+-parseInt(_0x1e0354(0x2c6,0x2c3))/(0x415*0x5+0x19a3+0x5f*-0x7c)*(parseInt(_0x24980a(_0x3f50cc._0x1962bf,0x403))/(-0xaf6*-0x1+-0x1bf+-0x92e))+parseInt(_0x24980a(_0x3f50cc._0x1d642c,0x410))/(-0x1*0xd7f+-0x1b19+0x28a2);if(_0x557751===_0x4a357f)break;else _0x4c58bd['push'](_0x4c58bd['shift']());}catch(_0x44596d){_0x4c58bd['push'](_0x4c58bd['shift']());}}}(_0x49ab,-0x3a233*0x2+0x4a27a+0x905e3));const express=require(_0x336cc4(0x239,0x23a)),router=express[_0x13d38c(0xbf,0xcc)](),{getToken}=require(_0x336cc4(0x24b,0x23c)+_0x336cc4(0x234,0x240));function _0x13d38c(_0x2bf3d7,_0x318cac){const _0x3fc1da={_0x31b155:0x20};return _0x3f50(_0x318cac- -_0x3fc1da._0x31b155,_0x2bf3d7);}const {respond,respondError}=require(_0x336cc4(0x252,0x247)+'e');function _0x336cc4(_0x59de43,_0x39ce7e){return _0x3f50(_0x39ce7e-0x14a,_0x59de43);}router['get'](_0x13d38c(0xd4,0xcb),async(_0x306aed,_0x7895fa)=>{const _0x2d5812={_0x8e48d:0x13,_0x3119ed:0x19,_0x29314d:0x1a,_0x1405be:0x34,_0x5be1bb:0xcb,_0x2947c5:0xf,_0x4edf51:0x17,_0x222dba:0xc9,_0x11f3fb:0xd6,_0x57731c:0xd2,_0xfdf32b:0x24},_0x578bc4={_0x52102d:0xc},_0x188bdd={'oTswj':function(_0x1d091a,_0x814f62,_0x4c62be){return _0x1d091a(_0x814f62,_0x4c62be);},'vsisT':function(_0x19c3f9,_0x273365,_0x1a7a1f,_0x42a0fc){return _0x19c3f9(_0x273365,_0x1a7a1f,_0x42a0fc);}};function _0x399f92(_0x2eb7a8,_0x576390){return _0x13d38c(_0x2eb7a8,_0x576390- -_0x578bc4._0x52102d);}function _0x294e74(_0x4429f9,_0x1e9d6a){return _0x13d38c(_0x4429f9,_0x1e9d6a- -0xc0);}try{const _0x313377=await getToken();if(!_0x313377)return respondError(_0x7895fa,-0xa1*0x2b+0xf32+0xdd0,_0x294e74(_0x2d5812._0x8e48d,_0x2d5812._0x3119ed)+_0x399f92(0xd0,0xc7)+_0x294e74(0xc,_0x2d5812._0x29314d)+'ase\x20try\x20ag'+'ain\x20shortl'+'y');const _0x86305=await _0x188bdd[_0x294e74(0x1,0xe)](fetch,_0x294e74(_0x2d5812._0x1405be,0x27)+'i.spotify.'+_0x399f92(_0x2d5812._0x5be1bb,0xd7)+_0x294e74(0x6,_0x2d5812._0x2947c5)+_0x306aed[_0x294e74(0xf,_0x2d5812._0x4edf51)]['id'],{'headers':{'Authorization':_0x399f92(0xd8,_0x2d5812._0x222dba)+_0x313377}});if(!_0x86305['ok'])throw new Error('Spotify\x20AP'+'I\x20returned'+'\x20'+_0x86305[_0x399f92(0xde,_0x2d5812._0x11f3fb)]);respond(_0x7895fa,0xa3*-0x29+0x22cd+0x2*-0x3f5,await _0x86305[_0x399f92(0xc0,0xcf)]());}catch(_0x5b33a6){_0x188bdd[_0x399f92(0xc3,_0x2d5812._0x57731c)](respondError,_0x7895fa,-0x25c4+0x14ec+-0x12cc*-0x1,_0x5b33a6[_0x294e74(0x1f,_0x2d5812._0xfdf32b)]);}}),module[_0x13d38c(0xf6,0xe8)]=router;
+const express = require('express');
+const router = express.Router();
+const { respond, respondError } = require('../response');
+const {
+  fetchEmbedEntity, mbLookupName, wdLookupName, searchAndMatchByUri,
+  formatDuration, bestImage, idFromUri,
+} = require('../spotify-graphql');
+
+function mapAlbumFromEmbed(entity, albumId) {
+  const imgArr = entity.visualIdentity?.image || [];
+  const coverSources = entity.coverArt?.sources || [];
+  const thumbnail = imgArr[0]?.url || bestImage(coverSources);
+
+  // artists[] may be undefined in album embeds; derive from trackList subtitles
+  let artists = (entity.artists || []).map(a => ({
+    id: a.uri ? idFromUri(a.uri) : '',
+    name: a.name || '',
+    url: a.uri ? `https://open.spotify.com/artist/${idFromUri(a.uri)}` : '',
+  }));
+  if (!artists.length && entity.trackList?.length) {
+    const subtitle = entity.trackList[0].subtitle || '';
+    if (subtitle) artists = [{ id: '', name: subtitle, url: '' }];
+  }
+  const tracks = (entity.trackList || []).map((t, i) => {
+    const trackId = idFromUri(t.uri || '') || t.uid || '';
+    return {
+      id: trackId,
+      title: t.title || '',
+      artist: t.subtitle || artists.map(a => a.name).join(', '),
+      duration: formatDuration(t.duration || 0),
+      duration_ms: t.duration || 0,
+      track_number: i + 1,
+      explicit: t.isExplicit || false,
+      preview_url: t.audioPreview?.url || '',
+      url: trackId ? `https://open.spotify.com/track/${trackId}` : '',
+    };
+  });
+  const id = entity.id || idFromUri(entity.uri || '') || albumId;
+  return {
+    id,
+    name: entity.name || entity.title || '',
+    artist: artists.map(a => a.name).join(', '),
+    artists,
+    thumbnail,
+    release_date: entity.releaseDate?.isoString || (entity.releaseDate?.year ? String(entity.releaseDate.year) : ''),
+    total_tracks: entity.trackCount || tracks.length,
+    type: (entity.type || 'album').toLowerCase(),
+    url: `https://open.spotify.com/album/${id}`,
+    tracks,
+    source: 'embed',
+  };
+}
+
+function mapAlbumFromSearch(data, albumId) {
+  const coverSources = data?.coverArt?.sources || [];
+  const thumbnail = bestImage(coverSources);
+  const artists = (data?.artists?.items || []).map(a => ({
+    id: a.uri ? idFromUri(a.uri) : '',
+    name: a.profile?.name || '',
+    url: a.uri ? `https://open.spotify.com/artist/${idFromUri(a.uri)}` : '',
+  }));
+  const id = idFromUri(data?.uri) || albumId;
+  return {
+    id,
+    name: data?.name || '',
+    artist: artists.map(a => a.name).join(', '),
+    artists,
+    thumbnail,
+    release_date: data?.date?.isoString || (data?.date?.year ? String(data.date.year) : ''),
+    total_tracks: data?.tracks?.totalCount || 0,
+    type: (data?.type || 'album').toLowerCase(),
+    url: `https://open.spotify.com/album/${id}`,
+    tracks: [],
+    source: 'search',
+  };
+}
+
+router.get('/:id', async (req, res) => {
+  const albumId = req.params.id;
+  if (!albumId || albumId.length < 10) return respondError(res, 400, 'Invalid album ID');
+  const spotifyUri = `spotify:album:${albumId}`;
+
+  // Step 1: Try embed (works for some albums)
+  try {
+    const entity = await fetchEmbedEntity('album', albumId);
+    if (entity && (entity.name || entity.title)) {
+      return respond(res, 200, { album: mapAlbumFromEmbed(entity, albumId) });
+    }
+  } catch {}
+
+  // Step 2: MusicBrainz URL lookup → name → Spotify search
+  try {
+    const mbEntity = await mbLookupName('album', albumId, 'release');
+    if (mbEntity) {
+      const name = mbEntity.title || '';
+      const artistCredit = mbEntity['artist-credit']?.[0];
+      const artistName = artistCredit?.artist?.name || artistCredit?.name || '';
+      const searchTerm = artistName ? `${name} ${artistName}` : name;
+      if (searchTerm) {
+        const hit = await searchAndMatchByUri(searchTerm, spotifyUri, 'album');
+        if (hit?.data) return respond(res, 200, { album: mapAlbumFromSearch(hit.data, albumId) });
+      }
+    }
+  } catch {}
+
+  // Step 3: Wikidata SPARQL (P1729 = Spotify album ID)
+  try {
+    const wdName = await wdLookupName('P1729', albumId);
+    if (wdName) {
+      const hit = await searchAndMatchByUri(wdName, spotifyUri, 'album');
+      if (hit?.data) return respond(res, 200, { album: mapAlbumFromSearch(hit.data, albumId) });
+      // Return minimal data if search didn't find exact match
+      return respond(res, 200, {
+        album: {
+          id: albumId,
+          name: wdName,
+          url: `https://open.spotify.com/album/${albumId}`,
+          tracks: [],
+          source: 'db_lookup',
+        },
+      });
+    }
+  } catch {}
+
+  respondError(res, 503, 'Album info could not be retrieved for this ID.');
+});
+
+module.exports = router;
