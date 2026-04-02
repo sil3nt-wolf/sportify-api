@@ -19,174 +19,138 @@
       --radius: 12px;
     }
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      min-height: 100vh;
-      line-height: 1.6;
-    }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; line-height: 1.6; }
 
     header {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
+      padding: 18px 40px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      position: sticky; top: 0; z-index: 100;
     }
-
     .logo { display: flex; align-items: center; gap: 14px; }
-    .logo-icon {
-      width: 42px; height: 42px; border-radius: 50%;
-      background: var(--green);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-    }
-    .logo-text h1 { font-size: 1.3rem; font-weight: 700; color: #fff; }
-    .logo-text p { font-size: 0.78rem; color: var(--muted); }
+    .logo-icon { width: 40px; height: 40px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; font-size: 20px; }
+    .logo-text h1 { font-size: 1.2rem; font-weight: 700; color: #fff; }
+    .logo-text p { font-size: 0.75rem; color: var(--muted); }
+    .badge { background: var(--green); color: #000; font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; }
 
-    .badge {
-      background: var(--green);
-      color: #000;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 20px;
-      letter-spacing: 0.5px;
-    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; }
+    nav a { color: var(--muted); font-size: 0.82rem; text-decoration: none; padding: 5px 12px; border-radius: 6px; transition: color 0.2s, background 0.2s; }
+    nav a:hover { color: #fff; background: var(--surface2); }
 
-    .hero {
-      text-align: center;
-      padding: 70px 20px 50px;
-      background: radial-gradient(ellipse at 50% 0%, #1db95422 0%, transparent 70%);
-    }
-    .hero h2 { font-size: 2.4rem; font-weight: 800; color: #fff; margin-bottom: 14px; }
+    .hero { text-align: center; padding: 60px 20px 44px; background: radial-gradient(ellipse at 50% 0%, #1db95422 0%, transparent 70%); }
+    .hero h2 { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
     .hero h2 span { color: var(--green); }
-    .hero p { font-size: 1.05rem; color: var(--muted); max-width: 540px; margin: 0 auto 32px; }
-
-    .pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-    .pill {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 6px 16px;
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
+    .hero p { font-size: 1rem; color: var(--muted); max-width: 520px; margin: 0 auto 28px; }
+    .pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .pill { background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 0.8rem; color: var(--muted); }
     .pill span { color: var(--green); font-weight: 600; }
 
-    main { max-width: 960px; margin: 0 auto; padding: 20px 20px 60px; }
+    main { max-width: 980px; margin: 0 auto; padding: 10px 20px 80px; }
 
-    .section-title {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 16px;
-      margin-top: 48px;
-    }
+    .section-title { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 14px; margin-top: 48px; }
 
-    .try-box {
+    /* ── Token Banner ── */
+    .token-banner {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 32px;
+      padding: 20px 24px;
+      display: flex; flex-direction: column; gap: 12px;
     }
+    .token-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .token-label { font-size: 0.8rem; color: var(--muted); }
+    .token-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .token-status { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s ease-in-out infinite; }
+    .dot.loading { background: #888; animation: none; }
+    .dot.error { background: #f87171; animation: none; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .token-expiry { font-size: 0.75rem; color: var(--muted); }
 
-    .input-row { display: flex; gap: 10px; flex-wrap: wrap; }
-    .input-row input, .input-row select {
+    .token-value-row { display: flex; gap: 8px; align-items: center; }
+    .token-value {
       flex: 1;
-      min-width: 160px;
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 10px 14px;
-      color: var(--text);
-      font-size: 0.9rem;
-      outline: none;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      color: #aef1a0;
+      word-break: break-all;
+      min-height: 42px;
+    }
+    .token-value.loading-text { color: var(--muted); font-style: italic; }
+
+    .btn { background: var(--green); color: #000; font-weight: 700; border: none; border-radius: 8px; padding: 9px 18px; cursor: pointer; font-size: 0.85rem; transition: background 0.2s; white-space: nowrap; }
+    .btn:hover { background: var(--green-dark); }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .btn-outline:hover { background: var(--surface2); border-color: #444; }
+
+    .token-usage-hint { font-size: 0.78rem; color: var(--muted); }
+    .token-usage-hint code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 2px 6px; font-family: monospace; color: #ccc; font-size: 0.76rem; }
+
+    /* ── Search playground ── */
+    .try-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin-bottom: 24px; }
+    .input-row { display: flex; gap: 8px; flex-wrap: wrap; }
+    .input-row input, .input-row select {
+      flex: 1; min-width: 140px;
+      background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+      padding: 9px 13px; color: var(--text); font-size: 0.88rem; outline: none;
       transition: border-color 0.2s;
     }
     .input-row input:focus, .input-row select:focus { border-color: var(--green); }
     .input-row select option { background: #111; }
 
-    button {
-      background: var(--green);
-      color: #000;
-      font-weight: 700;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 22px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: background 0.2s;
-      white-space: nowrap;
-    }
-    button:hover { background: var(--green-dark); }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
-
     .result-box {
-      margin-top: 16px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px;
-      font-family: 'Courier New', monospace;
-      font-size: 0.8rem;
-      color: #aef1a0;
-      white-space: pre-wrap;
-      word-break: break-all;
-      max-height: 360px;
-      overflow-y: auto;
-      display: none;
+      margin-top: 14px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+      padding: 14px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: #aef1a0;
+      white-space: pre-wrap; word-break: break-all; max-height: 380px; overflow-y: auto; display: none;
     }
     .result-box.visible { display: block; }
     .result-box.error { color: #f87171; }
 
-    .endpoint-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 14px;
-    }
+    /* ── Endpoint grid ── */
+    .endpoint-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 12px; }
+    .endpoint-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; cursor: pointer; transition: border-color 0.2s, transform 0.1s; }
+    .endpoint-card:hover { border-color: var(--green); transform: translateY(-2px); }
+    .ep-method { font-size: 0.68rem; font-weight: 700; background: #1db95420; color: var(--green); border-radius: 4px; padding: 2px 8px; display: inline-block; margin-bottom: 8px; }
+    .ep-path { font-family: monospace; font-size: 0.84rem; color: #fff; margin-bottom: 4px; }
+    .ep-params { font-size: 0.73rem; color: #555; margin-bottom: 4px; font-family: monospace; }
+    .ep-desc { font-size: 0.76rem; color: var(--muted); }
 
-    .endpoint-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      cursor: pointer;
-      transition: border-color 0.2s, transform 0.1s;
-    }
-    .endpoint-card:hover { border-color: var(--green); transform: translateY(-1px); }
+    /* ── Usage docs ── */
+    .usage-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+    .usage-head { display: flex; align-items: center; gap: 12px; padding: 14px 18px; cursor: pointer; user-select: none; }
+    .usage-head:hover { background: var(--surface2); }
+    .usage-head .ep-method { margin: 0; }
+    .usage-path { font-family: monospace; font-size: 0.88rem; color: #fff; flex: 1; }
+    .usage-desc-short { font-size: 0.76rem; color: var(--muted); }
+    .chevron { color: var(--muted); font-size: 0.8rem; transition: transform 0.2s; }
+    .usage-block.open .chevron { transform: rotate(90deg); }
 
-    .ep-method {
-      font-size: 0.7rem;
-      font-weight: 700;
-      background: #1db95420;
-      color: var(--green);
-      border-radius: 4px;
-      padding: 2px 8px;
-      display: inline-block;
-      margin-bottom: 8px;
-    }
-    .ep-path { font-family: monospace; font-size: 0.85rem; color: #fff; margin-bottom: 4px; }
-    .ep-desc { font-size: 0.78rem; color: var(--muted); }
+    .usage-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--border); }
+    .usage-block.open .usage-body { display: block; }
 
-    .footer {
-      text-align: center;
-      padding: 30px 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-    .footer a { color: var(--green); text-decoration: none; }
+    .param-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.8rem; }
+    .param-table th { text-align: left; padding: 6px 10px; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--border); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; }
+    .param-table td { padding: 7px 10px; border-bottom: 1px solid #1a1a1a; vertical-align: top; }
+    .param-table td:first-child { font-family: monospace; color: #a5b4fc; }
+    .param-table td:nth-child(2) { color: #fbbf24; }
+    .param-table td:nth-child(3) { color: var(--muted); }
 
-    .loader { display: inline-block; width: 14px; height: 14px; border: 2px solid #000; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; vertical-align: middle; margin-right: 6px; }
+    .code-block { position: relative; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin: 10px 0; font-family: 'Courier New', monospace; font-size: 0.78rem; color: #ccc; white-space: pre-wrap; word-break: break-all; }
+    .code-label { font-size: 0.68rem; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+    .copy-btn { position: absolute; top: 10px; right: 10px; background: var(--surface2); border: 1px solid var(--border); color: var(--muted); border-radius: 6px; padding: 3px 10px; font-size: 0.72rem; cursor: pointer; transition: color 0.2s, border-color 0.2s; }
+    .copy-btn:hover { color: #fff; border-color: #444; }
+    .copy-btn.copied { color: var(--green); border-color: var(--green); }
+
+    .loader { display: inline-block; width: 13px; height: 13px; border: 2px solid #000; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; vertical-align: middle; margin-right: 5px; }
     @keyframes spin { to { transform: rotate(360deg); } }
+
+    .footer { text-align: center; padding: 28px 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.78rem; }
   </style>
 </head>
 <body>
@@ -199,12 +163,18 @@
       <p>by CASPER TECH · TRABY CASPER</p>
     </div>
   </div>
+  <nav>
+    <a href="#token">Token</a>
+    <a href="#playground">Playground</a>
+    <a href="#endpoints">Endpoints</a>
+    <a href="#docs">Usage</a>
+  </nav>
   <span class="badge">FREE &amp; UNLIMITED</span>
 </header>
 
 <div class="hero">
   <h2>Spotify Data.<br><span>No Keys. No Limits.</span></h2>
-  <p>Access Spotify's full catalogue — search, tracks, albums, playlists and artists — completely free with zero setup.</p>
+  <p>Access Spotify's full catalogue — search, tracks, albums, playlists and artists — free with zero setup required.</p>
   <div class="pills">
     <div class="pill"><span>✓</span> No API Key</div>
     <div class="pill"><span>✓</span> No Sign Up</div>
@@ -216,7 +186,31 @@
 
 <main>
 
-  <p class="section-title">Try It Live</p>
+  <!-- ── Live Token ── -->
+  <p class="section-title" id="token">Live Token</p>
+  <div class="token-banner">
+    <div class="token-header">
+      <span class="token-label">Current active Spotify access token</span>
+      <div class="token-meta">
+        <div class="token-status">
+          <div class="dot loading" id="tokenDot"></div>
+          <span id="tokenStatusText">Fetching...</span>
+        </div>
+        <span class="token-expiry" id="tokenExpiry"></span>
+        <button class="btn btn-outline" onclick="loadToken()" style="padding:5px 12px;font-size:0.76rem;">↻ Refresh</button>
+      </div>
+    </div>
+    <div class="token-value-row">
+      <div class="token-value loading-text" id="tokenValue">Fetching token...</div>
+      <button class="btn" id="copyTokenBtn" onclick="copyToken()" disabled>Copy</button>
+    </div>
+    <div class="token-usage-hint">
+      Use as: <code>Authorization: Bearer &lt;token&gt;</code> in any Spotify API request · Valid ~1 hour · Auto-refreshes every 30 min
+    </div>
+  </div>
+
+  <!-- ── Search Playground ── -->
+  <p class="section-title" id="playground">Try It Live</p>
   <div class="try-box">
     <div class="input-row">
       <input id="searchQ" type="text" placeholder="Search query e.g. Faded" value="Faded" />
@@ -225,61 +219,229 @@
         <option value="album">Album</option>
         <option value="artist">Artist</option>
         <option value="playlist">Playlist</option>
+        <option value="episode">Episode</option>
+        <option value="show">Show</option>
       </select>
-      <input id="searchLimit" type="number" placeholder="Limit" value="3" min="1" max="50" style="max-width:90px;" />
-      <button id="searchBtn" onclick="runSearch()">Search</button>
+      <input id="searchLimit" type="number" placeholder="Limit" value="3" min="1" max="50" style="max-width:85px;" />
+      <button class="btn" id="searchBtn" onclick="runSearch()">Search</button>
     </div>
     <pre id="searchResult" class="result-box"></pre>
   </div>
 
-  <p class="section-title">Endpoints</p>
+  <!-- ── Endpoint Cards ── -->
+  <p class="section-title" id="endpoints">Endpoints</p>
   <div class="endpoint-grid">
-    <div class="endpoint-card" onclick="quickCall('/api/token')">
+    <div class="endpoint-card" onclick="loadToken()">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/token</div>
       <div class="ep-desc">Get current anonymous Spotify access token</div>
     </div>
-    <div class="endpoint-card" onclick="quickCall('/api/health')">
+    <div class="endpoint-card" onclick="quickCall('/api/health', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/health</div>
-      <div class="ep-desc">Check API health and uptime</div>
+      <div class="ep-desc">Check API health and server uptime</div>
     </div>
-    <div class="endpoint-card" onclick="prompt('Copy this URL:', location.origin+'/api/search?q=Faded&type=track&limit=5')">
+    <div class="endpoint-card" onclick="quickCall('/api/search?q=Faded&type=track&limit=3', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/search</div>
-      <div class="ep-desc">Search tracks, albums, artists, playlists · ?q= &type= &limit=</div>
+      <div class="ep-params">?q= &amp;type= &amp;limit= &amp;offset=</div>
+      <div class="ep-desc">Search tracks, albums, artists, playlists</div>
     </div>
-    <div class="endpoint-card" onclick="prompt('Copy this URL:', location.origin+'/api/track/3n3Ppam7vgaVa1iaRUIOKE')">
+    <div class="endpoint-card" onclick="quickCall('/api/track/3n3Ppam7vgaVa1iaRUIOKE', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/track/:id</div>
-      <div class="ep-desc">Get full track details by Spotify ID</div>
+      <div class="ep-desc">Full track details by Spotify ID</div>
     </div>
-    <div class="endpoint-card" onclick="prompt('Copy this URL:', location.origin+'/api/album/1weenld61qoidwYuZ1GESA')">
+    <div class="endpoint-card" onclick="quickCall('/api/album/1weenld61qoidwYuZ1GESA', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/album/:id</div>
-      <div class="ep-desc">Get album details and track listing</div>
+      <div class="ep-desc">Album details and track listing</div>
     </div>
-    <div class="endpoint-card" onclick="prompt('Copy this URL:', location.origin+'/api/playlist/37i9dQZEVXbMDoHDwVN2tF')">
+    <div class="endpoint-card" onclick="quickCall('/api/playlist/37i9dQZEVXbMDoHDwVN2tF', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/playlist/:id</div>
-      <div class="ep-desc">Get playlist info and tracks</div>
+      <div class="ep-desc">Playlist info and all tracks</div>
     </div>
-    <div class="endpoint-card" onclick="prompt('Copy this URL:', location.origin+'/api/artist/3TVXtAsR1Inumwj472S9r4')">
+    <div class="endpoint-card" onclick="quickCall('/api/artist/3TVXtAsR1Inumwj472S9r4', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/artist/:id</div>
-      <div class="ep-desc">Get artist profile and metadata</div>
+      <div class="ep-desc">Artist profile and metadata</div>
     </div>
-    <div class="endpoint-card" onclick="prompt('Copy this URL:', location.origin+'/api/artist/3TVXtAsR1Inumwj472S9r4/top-tracks?market=US')">
+    <div class="endpoint-card" onclick="quickCall('/api/artist/3TVXtAsR1Inumwj472S9r4/top-tracks?market=US', 'quickResult')">
       <div class="ep-method">GET</div>
       <div class="ep-path">/api/artist/:id/top-tracks</div>
-      <div class="ep-desc">Get artist top tracks · ?market=US</div>
+      <div class="ep-params">?market=US</div>
+      <div class="ep-desc">Artist top tracks by market</div>
+    </div>
+  </div>
+  <div class="try-box" style="margin-top:14px;">
+    <p style="font-size:0.78rem;color:var(--muted);margin-bottom:10px;">Click any card above to preview its response here</p>
+    <pre id="quickResult" class="result-box"></pre>
+  </div>
+
+  <!-- ── Usage Docs ── -->
+  <p class="section-title" id="docs">Usage Documentation</p>
+
+  <!-- Token -->
+  <div class="usage-block open" id="doc-token">
+    <div class="usage-head" onclick="toggleDoc('doc-token')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/token</span>
+      <span class="usage-desc-short">Get a live Spotify access token</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Returns the current anonymous Spotify web-player access token. Use this token in any direct Spotify API call.</p>
+      <div class="code-label" style="margin-top:14px;">Request</div>
+      <div class="code-block">GET /api/token<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <div class="code-label">Response</div>
+      <div class="code-block">{
+  "provider": "CASPER TECH",
+  "creator": "TRABY CASPER",
+  "success": true,
+  "note": "Anonymous Spotify web-player token. Valid for ~1 hour.",
+  "access_token": "BQDxxxxxx...",
+  "token_type": "Bearer",
+  "usage": {
+    "search": "GET https://api.spotify.com/v1/search?q=Faded&type=track&limit=10",
+    "track": "GET https://api.spotify.com/v1/tracks/{id}",
+    "album": "GET https://api.spotify.com/v1/albums/{id}",
+    "playlist": "GET https://api.spotify.com/v1/playlists/{id}",
+    "artist": "GET https://api.spotify.com/v1/artists/{id}"
+  }
+}<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <div class="code-label">Using the token with Spotify directly</div>
+      <div class="code-block">curl -H "Authorization: Bearer BQDxxxxxx..." \
+  "https://api.spotify.com/v1/search?q=Faded&type=track&limit=5"<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
     </div>
   </div>
 
-  <p class="section-title">Quick Response Preview</p>
-  <div class="try-box">
-    <button onclick="quickCall('/api')" style="margin-bottom:0;">Load API Info</button>
-    <pre id="quickResult" class="result-box"></pre>
+  <!-- Search -->
+  <div class="usage-block" id="doc-search">
+    <div class="usage-head" onclick="toggleDoc('doc-search')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/search</span>
+      <span class="usage-desc-short">Search Spotify catalogue</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Search across Spotify's full catalogue. Returns matching results for the given type.</p>
+      <table class="param-table">
+        <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+        <tr><td>q</td><td>string · required</td><td>Search query e.g. <em>Faded</em>, <em>Drake</em>, <em>Chill Vibes</em></td></tr>
+        <tr><td>type</td><td>string · required</td><td>Comma-separated: track, album, artist, playlist, episode, show</td></tr>
+        <tr><td>limit</td><td>number · optional</td><td>Results to return. Default: 10. Max: 50</td></tr>
+        <tr><td>offset</td><td>number · optional</td><td>Pagination offset. Default: 0</td></tr>
+      </table>
+      <div class="code-label">Example — search for a track</div>
+      <div class="code-block">GET /api/search?q=Faded&type=track&limit=5<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <div class="code-label">Example — search for an artist</div>
+      <div class="code-block">GET /api/search?q=Drake&type=artist&limit=3<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <div class="code-label">Example — multiple types</div>
+      <div class="code-block">GET /api/search?q=Chill&type=track,album,playlist&limit=5<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+    </div>
+  </div>
+
+  <!-- Track -->
+  <div class="usage-block" id="doc-track">
+    <div class="usage-head" onclick="toggleDoc('doc-track')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/track/:id</span>
+      <span class="usage-desc-short">Get track details by Spotify ID</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Returns full track metadata including name, artists, album, duration, and audio preview URL.</p>
+      <table class="param-table">
+        <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+        <tr><td>id</td><td>string · required</td><td>Spotify track ID (22-character string from the Spotify URL)</td></tr>
+      </table>
+      <div class="code-label">Example</div>
+      <div class="code-block">GET /api/track/3n3Ppam7vgaVa1iaRUIOKE<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <p style="font-size:0.76rem;color:var(--muted);margin-top:8px;">The track ID is the last part of a Spotify URL: <code style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:1px 5px;font-size:0.74rem;">open.spotify.com/track/<strong>3n3Ppam7vgaVa1iaRUIOKE</strong></code></p>
+    </div>
+  </div>
+
+  <!-- Album -->
+  <div class="usage-block" id="doc-album">
+    <div class="usage-head" onclick="toggleDoc('doc-album')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/album/:id</span>
+      <span class="usage-desc-short">Get album details and track listing</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Returns album metadata including name, artists, release date, total tracks, and the full track list.</p>
+      <table class="param-table">
+        <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+        <tr><td>id</td><td>string · required</td><td>Spotify album ID from the album URL</td></tr>
+      </table>
+      <div class="code-label">Example</div>
+      <div class="code-block">GET /api/album/1weenld61qoidwYuZ1GESA<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+    </div>
+  </div>
+
+  <!-- Playlist -->
+  <div class="usage-block" id="doc-playlist">
+    <div class="usage-head" onclick="toggleDoc('doc-playlist')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/playlist/:id</span>
+      <span class="usage-desc-short">Get playlist info and all tracks</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Returns playlist metadata, owner, description, and the full list of tracks.</p>
+      <table class="param-table">
+        <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+        <tr><td>id</td><td>string · required</td><td>Spotify playlist ID from the playlist URL</td></tr>
+      </table>
+      <div class="code-label">Example — Spotify Global Top 50</div>
+      <div class="code-block">GET /api/playlist/37i9dQZEVXbMDoHDwVN2tF<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+    </div>
+  </div>
+
+  <!-- Artist -->
+  <div class="usage-block" id="doc-artist">
+    <div class="usage-head" onclick="toggleDoc('doc-artist')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/artist/:id</span>
+      <span class="usage-desc-short">Get artist profile and metadata</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Returns artist name, genres, follower count, popularity score, and profile images.</p>
+      <table class="param-table">
+        <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+        <tr><td>id</td><td>string · required</td><td>Spotify artist ID from the artist URL</td></tr>
+      </table>
+      <div class="code-label">Example — Drake</div>
+      <div class="code-block">GET /api/artist/3TVXtAsR1Inumwj472S9r4<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+    </div>
+  </div>
+
+  <!-- Artist top tracks -->
+  <div class="usage-block" id="doc-artist-top">
+    <div class="usage-head" onclick="toggleDoc('doc-artist-top')">
+      <span class="ep-method">GET</span>
+      <span class="usage-path">/api/artist/:id/top-tracks</span>
+      <span class="usage-desc-short">Get artist top tracks by market</span>
+      <span class="chevron">▶</span>
+    </div>
+    <div class="usage-body">
+      <p style="font-size:0.83rem;color:var(--muted);margin-top:14px;">Returns the artist's top 10 tracks in a given market, with track metadata and audio preview URLs.</p>
+      <table class="param-table">
+        <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+        <tr><td>id</td><td>string · required</td><td>Spotify artist ID</td></tr>
+        <tr><td>market</td><td>string · optional</td><td>ISO 3166-1 alpha-2 country code. Default: US</td></tr>
+      </table>
+      <div class="code-label">Example</div>
+      <div class="code-block">GET /api/artist/3TVXtAsR1Inumwj472S9r4/top-tracks?market=US<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <div class="code-label">Other markets</div>
+      <div class="code-block">?market=GB   — United Kingdom
+?market=KE   — Kenya
+?market=NG   — Nigeria
+?market=ZA   — South Africa<button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+    </div>
   </div>
 
 </main>
@@ -290,6 +452,75 @@
 </footer>
 
 <script>
+  let currentToken = '';
+  let tokenFetchedAt = null;
+
+  async function loadToken() {
+    const dot = document.getElementById('tokenDot');
+    const status = document.getElementById('tokenStatusText');
+    const val = document.getElementById('tokenValue');
+    const expiry = document.getElementById('tokenExpiry');
+    const copyBtn = document.getElementById('copyTokenBtn');
+
+    dot.className = 'dot loading';
+    status.textContent = 'Fetching...';
+    val.className = 'token-value loading-text';
+    val.textContent = 'Fetching token...';
+    copyBtn.disabled = true;
+
+    try {
+      const res = await fetch('/api/token');
+      const data = await res.json();
+      if (data.success && data.access_token) {
+        currentToken = data.access_token;
+        tokenFetchedAt = Date.now();
+        val.className = 'token-value';
+        val.textContent = currentToken;
+        dot.className = 'dot';
+        status.textContent = 'Active';
+        expiry.textContent = 'Valid for ~1 hour';
+        copyBtn.disabled = false;
+        startExpiryCountdown();
+      } else {
+        throw new Error(data.error || 'Failed to get token');
+      }
+    } catch (e) {
+      dot.className = 'dot error';
+      status.textContent = 'Error';
+      val.className = 'token-value loading-text';
+      val.textContent = 'Could not fetch token — ' + e.message;
+      expiry.textContent = '';
+    }
+  }
+
+  function startExpiryCountdown() {
+    clearInterval(window._expiryTimer);
+    window._expiryTimer = setInterval(() => {
+      if (!tokenFetchedAt) return;
+      const elapsed = Math.floor((Date.now() - tokenFetchedAt) / 1000);
+      const remaining = 3600 - elapsed;
+      if (remaining <= 0) {
+        clearInterval(window._expiryTimer);
+        document.getElementById('tokenExpiry').textContent = 'Expired — click Refresh';
+        document.getElementById('tokenDot').className = 'dot error';
+        document.getElementById('tokenStatusText').textContent = 'Expired';
+        return;
+      }
+      const m = Math.floor(remaining / 60);
+      const s = remaining % 60;
+      document.getElementById('tokenExpiry').textContent = `Expires in ${m}m ${s}s`;
+    }, 1000);
+  }
+
+  function copyToken() {
+    if (!currentToken) return;
+    navigator.clipboard.writeText(currentToken).then(() => {
+      const btn = document.getElementById('copyTokenBtn');
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 2000);
+    });
+  }
+
   async function runSearch() {
     const q = document.getElementById('searchQ').value.trim();
     const type = document.getElementById('searchType').value;
@@ -314,8 +545,8 @@
     btn.textContent = 'Search';
   }
 
-  async function quickCall(path) {
-    const box = document.getElementById('quickResult');
+  async function quickCall(path, boxId) {
+    const box = document.getElementById(boxId);
     box.className = 'result-box visible';
     box.textContent = 'Loading...';
     try {
@@ -329,9 +560,23 @@
     }
   }
 
-  document.getElementById('searchQ').addEventListener('keydown', e => {
-    if (e.key === 'Enter') runSearch();
-  });
+  function toggleDoc(id) {
+    document.getElementById(id).classList.toggle('open');
+  }
+
+  function copyCode(btn) {
+    const block = btn.parentElement;
+    const text = block.textContent.replace('Copy', '').replace('Copied!', '').trim();
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+
+  document.getElementById('searchQ').addEventListener('keydown', e => { if (e.key === 'Enter') runSearch(); });
+
+  loadToken();
 </script>
 </body>
 </html>
