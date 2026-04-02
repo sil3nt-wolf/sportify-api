@@ -1,1 +1,148 @@
-function _0x50e4f2(_0x393831,_0x71823a){const _0x54c62d={_0x1bd94f:0x23c};return _0x27b9(_0x393831-_0x54c62d._0x1bd94f,_0x71823a);}function _0x27b9(_0x5203ed,_0x2650c3){_0x5203ed=_0x5203ed-(-0x1*-0x270b+-0x23db*0x1+-0x140);const _0x2bbf69=_0x5f2a();let _0x2933ec=_0x2bbf69[_0x5203ed];if(_0x27b9['DXjXcy']===undefined){var _0x4efd68=function(_0x244e90){const _0x3ed600='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x108e14='',_0x288802='';for(let _0x48491e=-0x6a2+0x1*0x11a1+0x1*-0xaff,_0x406a5c,_0x4c9710,_0x4d79a7=-0x2c*-0xb5+-0x50*0x6c+0x2a4;_0x4c9710=_0x244e90['charAt'](_0x4d79a7++);~_0x4c9710&&(_0x406a5c=_0x48491e%(0x828+0x2051*-0x1+0x182d)?_0x406a5c*(-0x5bf+0xd98+-0x5*0x185)+_0x4c9710:_0x4c9710,_0x48491e++%(-0x184d*0x1+0xfef*-0x1+0x2840))?_0x108e14+=String['fromCharCode'](-0x19cc+0xa*0xa9+0x3*0x6bb&_0x406a5c>>(-(-0x262c+0x4f*0x61+0x1*0x83f)*_0x48491e&0x1e51+0x1*-0x227f+-0x21a*-0x2)):-0x251c+0x64b+0x1ed1){_0x4c9710=_0x3ed600['indexOf'](_0x4c9710);}for(let _0x3c09fd=-0x10d9+0x2c*-0x5f+-0x3*-0xb0f,_0x333859=_0x108e14['length'];_0x3c09fd<_0x333859;_0x3c09fd++){_0x288802+='%'+('00'+_0x108e14['charCodeAt'](_0x3c09fd)['toString'](-0xb7e*-0x1+-0xe25+0x5*0x8b))['slice'](-(-0x281*-0xd+-0x748+-0x1943));}return decodeURIComponent(_0x288802);};_0x27b9['kzfbuG']=_0x4efd68,_0x27b9['xRbWle']={},_0x27b9['DXjXcy']=!![];}const _0xcb574b=_0x2bbf69[-0x1a3*-0x1+-0x73*0x19+0x998],_0x5d3b81=_0x5203ed+_0xcb574b,_0x55dfa0=_0x27b9['xRbWle'][_0x5d3b81];return!_0x55dfa0?(_0x2933ec=_0x27b9['kzfbuG'](_0x2933ec),_0x27b9['xRbWle'][_0x5d3b81]=_0x2933ec):_0x2933ec=_0x55dfa0,_0x2933ec;}(function(_0x100575,_0x160611){const _0x1f175d={_0x22e55b:0x11,_0x1b7c90:0xda,_0x1d0fd2:0xdf,_0x3f5643:0xd1,_0x4952bd:0x2b,_0x4e90d2:0x27,_0x4916a4:0xb9,_0x930e3b:0xbb,_0x1bb7ce:0x28,_0x554c76:0x3,_0x27b3ee:0xf8};function _0x5a3290(_0x21135e,_0x3d0771){return _0x27b9(_0x21135e- -0x2d8,_0x3d0771);}function _0x3c8c61(_0x149dc4,_0x54c400){return _0x27b9(_0x149dc4- -0x1f3,_0x54c400);}const _0x41abf4=_0x100575();while(!![]){try{const _0x48498b=parseInt(_0x3c8c61(_0x1f175d._0x22e55b,0x1f))/(-0x3*0x7b5+0x106f*0x1+0x6b1)*(-parseInt(_0x3c8c61(0x18,0x5))/(0x1*-0x30e+0x1125+0x2d1*-0x5))+-parseInt(_0x5a3290(-_0x1f175d._0x1b7c90,-_0x1f175d._0x1d0fd2))/(0x18b*0xa+-0xa*0x103+0x54d*-0x1)*(-parseInt(_0x5a3290(-_0x1f175d._0x3f5643,-0xdf))/(0x1d49+0x2*-0x92f+0x1*-0xae7))+-parseInt(_0x3c8c61(0x26,_0x1f175d._0x4952bd))/(-0xe89+0xfa4+-0x116)+-parseInt(_0x3c8c61(0x1d,_0x1f175d._0x4e90d2))/(-0x2f9*0x9+0x1f2e+-0x467)*(parseInt(_0x5a3290(-0xbd,-_0x1f175d._0x4916a4))/(-0x9ca+0x1c8e+-0x12bd))+-parseInt(_0x5a3290(-0xbc,-_0x1f175d._0x930e3b))/(0x2189+0xb*-0x268+0x1*-0x709)+parseInt(_0x3c8c61(0x15,_0x1f175d._0x1bb7ce))/(0xcc7*0x2+-0x1*0x95+-0x18f0)*(-parseInt(_0x3c8c61(-_0x1f175d._0x554c76,-0xa))/(-0x21fb+-0x156e+-0xb17*-0x5))+-parseInt(_0x5a3290(-_0x1f175d._0x1d0fd2,-0xd1))/(0x1*-0x19c9+-0x941*-0x4+0xb3*-0x10)*(-parseInt(_0x5a3290(-0xe2,-_0x1f175d._0x27b3ee))/(0xa27+-0x3*-0x5ae+-0x1b25));if(_0x48498b===_0x160611)break;else _0x41abf4['push'](_0x41abf4['shift']());}catch(_0x4620c0){_0x41abf4['push'](_0x41abf4['shift']());}}}(_0x5f2a,0x548af+-0x1*-0x2aeed+-0x48d39));function _0x5f2a(){const _0x3f134e=['qMvHCMvYia','mtf2wMjWzKC','u3bVDgLMEsb0BW','C3rHDhvZ','zMLSDgvY','zxHWCMvZCW','m1DWueX0va','C3bSAxq','CgXHEwXPC3q','yw5Hz2vY','rwzODM8','lI4VDg9Rzw4TBq','mJfiyMrwBei','As5ZCg90Awz5lG','ywLUihnOB3j0Ba','ntyYnte2vufNCMDx','mta4BwD2EM5L','C2HVDW','CMnOpW','mJqZmZbbu2forxm','BgfIBguSihbSzq','rKPwDK0','yxnLihrYEsbHzW','sw52ywXPzcb0Eq','nLPNtxnNEG','Ahr0Chm6lY9HCa','uM91DgvY','y29Tl3yXl3nLyq','Aw5JBhvKzxm','DhjHy2S','CMPWrwG','D0HlrK0','rwTlr0K','mJuWodC1ExbpAMXL','zxj5ihbHCMfTzq','otaYnZKWuwP5ChnW','mtK1nZu1mMDnwLf2Ca','AM9PBG','mti3mJqWs0jbsfne','rMv2rfO','twLZC2LUzYbXDq','CxvLCNK','DMfSDwvZoIa','z2v0','mta5odi0nZjqtLnerKO','DgvYoIbX'];_0x5f2a=function(){return _0x3f134e;};return _0x5f2a();}const express=require(_0x20bd1a(0x412,0x428)),router=express[_0x50e4f2(0x44e,0x44a)](),{getToken}=require(_0x50e4f2(0x43f,0x42b)+_0x50e4f2(0x43d,0x449)),{respond,respondError}=require('../respons'+'e');function _0x20bd1a(_0x34a95f,_0x5e089b){return _0x27b9(_0x5e089b-0x22b,_0x34a95f);}router[_0x20bd1a(0x434,0x420)]('/',async(_0x5db5fb,_0x15b537)=>{const _0x43bd90={_0x4d2048:0x16a,_0x4b9a39:0x165,_0x5e9e97:0x38e,_0x1e5936:0x399,_0x45f79a:0x39c,_0x32a445:0x388,_0x301d03:0x384,_0x2184bb:0x39b,_0x18f5b8:0x38c,_0x314e6f:0x153,_0x227c68:0x150,_0x3dd718:0x37b,_0x5d8de8:0x13a,_0x25994d:0x168,_0x447c58:0x153,_0x586423:0x390,_0x536d0d:0x383,_0x5bc790:0x14e,_0x209d83:0x138,_0x2be4cd:0x38a,_0x3584c9:0x378,_0x54cf7e:0x13f,_0xd763e6:0x140,_0x5af25b:0x391,_0x4c2b09:0x389,_0x478896:0x149,_0x392c40:0x399,_0x1a8b96:0x159,_0x53cf7a:0x161,_0x324ba8:0x398,_0x41086a:0x13f},_0x22f025={_0x1b973c:0x598},_0x82118c={'FevDZ':'track','rjpEh':_0x47ff5b(-_0x43bd90._0x4d2048,-0x159)+_0x47ff5b(-0x142,-0x13f)+_0x47ff5b(-_0x43bd90._0x4b9a39,-0x150),'EkKGI':'artist','wHKFM':'episode','Efhvo':function(_0x46b0c9,_0x143ba0,_0x58336e,_0x5456a8){return _0x46b0c9(_0x143ba0,_0x58336e,_0x5456a8);},'FJVvM':function(_0x2fbe25,_0x37a79e,_0x12dc16){return _0x2fbe25(_0x37a79e,_0x12dc16);}},{q:_0x3ca0c8,type:type=_0x82118c[_0x390ec4(0x375,0x37e)],limit:limit=-0x1fb6+-0x22df+0x429f,offset:offset=0x521*0x5+-0x1ca9+-0xc1*-0x4}=_0x5db5fb[_0x47ff5b(-0x169,-0x153)];function _0x47ff5b(_0x1efab0,_0x351ed1){return _0x50e4f2(_0x1efab0- -_0x22f025._0x1b973c,_0x351ed1);}if(!_0x3ca0c8)return respondError(_0x15b537,-0x5dd*0x1+0xb*0x1d5+0x1*-0xcba,_0x82118c[_0x390ec4(0x39a,_0x43bd90._0x5e9e97)]);const _0x1056dc=[_0x390ec4(_0x43bd90._0x1e5936,0x38a),'album',_0x82118c[_0x390ec4(_0x43bd90._0x45f79a,_0x43bd90._0x32a445)],_0x390ec4(_0x43bd90._0x301d03,0x379),_0x82118c[_0x390ec4(_0x43bd90._0x2184bb,_0x43bd90._0x18f5b8)],_0x47ff5b(-_0x43bd90._0x314e6f,-_0x43bd90._0x227c68)];function _0x390ec4(_0x35bf7c,_0x9811e5){return _0x50e4f2(_0x35bf7c- -0xb8,_0x9811e5);}const _0x4340fc=type[_0x47ff5b(-0x15d,-0x147)](',')[_0x390ec4(0x380,_0x43bd90._0x3dd718)](_0x35c794=>_0x1056dc[_0x47ff5b(-0x148,-0x150)](_0x35c794));if(_0x4340fc['length']===0x1f65+-0x25a5+0x64*0x10)return _0x82118c[_0x47ff5b(-0x15a,-0x153)](respondError,_0x15b537,-0xc2*-0x20+0xb*-0x22f+0xb*0x1f,_0x47ff5b(-0x14d,-_0x43bd90._0x5d8de8)+'pe.\x20Valid\x20'+_0x47ff5b(-_0x43bd90._0x25994d,-_0x43bd90._0x447c58)+_0x1056dc[_0x390ec4(0x3a1,0x3a9)](',\x20'));try{const _0x45a491=await getToken();if(!_0x45a491)return respondError(_0x15b537,-0x1*0xbb7+0x1*-0xee4+-0x45*-0x6a,_0x390ec4(0x37e,0x377)+'ken\x20unavai'+_0x390ec4(_0x43bd90._0x586423,_0x43bd90._0x536d0d)+_0x47ff5b(-_0x43bd90._0x5bc790,-_0x43bd90._0x209d83)+_0x390ec4(_0x43bd90._0x2be4cd,_0x43bd90._0x3584c9)+'y');const _0x1d4e9d=new URLSearchParams({'q':_0x3ca0c8,'type':_0x4340fc[_0x47ff5b(-_0x43bd90._0x54cf7e,-_0x43bd90._0xd763e6)](','),'limit':limit,'offset':offset}),_0x49ac6a=await _0x82118c[_0x390ec4(_0x43bd90._0x5af25b,0x391)](fetch,_0x47ff5b(-0x14b,-0x13f)+_0x390ec4(_0x43bd90._0x4c2b09,0x382)+_0x47ff5b(-_0x43bd90._0x478896,-0x15f)+_0x390ec4(0x38e,_0x43bd90._0x392c40)+_0x1d4e9d,{'headers':{'Authorization':_0x47ff5b(-0x164,-_0x43bd90._0x1a8b96)+_0x45a491}});if(!_0x49ac6a['ok'])throw new Error('Spotify\x20AP'+'I\x20returned'+'\x20'+_0x49ac6a[_0x47ff5b(-_0x43bd90._0x53cf7a,-0x164)]);const _0x13a42d=await _0x49ac6a['json']();_0x82118c[_0x390ec4(0x386,_0x43bd90._0x324ba8)](respond,_0x15b537,0xa6b+-0x1794+0xdf1,{'query':_0x3ca0c8,'type':_0x4340fc[_0x47ff5b(-_0x43bd90._0x41086a,-_0x43bd90._0x5bc790)](','),..._0x13a42d});}catch(_0xd57aeb){respondError(_0x15b537,0xa8d+0x1ae1*0x1+-0x2*0x11bd,_0xd57aeb['message']);}}),module['exports']=router;
+const express = require('express');
+const router = express.Router();
+const { respond, respondError } = require('../response');
+const { spotifyGraphQL, formatDuration, bestImage } = require('../spotify-graphql');
+
+const SEARCH_HASH = '3c9d3f60dac5dea3876b6db3f534192b1c1d90032c4233c1bbaba526db41eb31';
+
+const CACHE_TTL = 5 * 60 * 1000;
+const MAX_CACHE = 500;
+const cache = new Map();
+
+function cacheGet(key) {
+  const e = cache.get(key);
+  if (!e) return null;
+  if (Date.now() - e.ts > CACHE_TTL) { cache.delete(key); return null; }
+  return e.data;
+}
+function cacheSet(key, data) {
+  if (cache.size >= MAX_CACHE) cache.delete(cache.keys().next().value);
+  cache.set(key, { data, ts: Date.now() });
+}
+
+function idFromUri(uri) {
+  return uri ? uri.split(':')[2] || '' : '';
+}
+
+function mapTrack(t) {
+  const ms = t.duration?.totalMilliseconds || t.duration_ms || 0;
+  const id = t.id || idFromUri(t.uri) || '';
+  return {
+    id,
+    title: t.name || '',
+    artist: (t.artists?.items || []).map(a => a.profile?.name || a.name || '').join(', '),
+    artists: (t.artists?.items || []).map(a => a.profile?.name || a.name || ''),
+    album: t.albumOfTrack?.name || t.album?.name || '',
+    url: `https://open.spotify.com/track/${id}`,
+    thumbnail: bestImage(t.albumOfTrack?.coverArt?.sources || t.album?.images),
+    duration: formatDuration(ms),
+    duration_ms: ms,
+    release_date: t.albumOfTrack?.date?.year ? String(t.albumOfTrack.date.year) : (t.album?.release_date || ''),
+    explicit: t.contentRating?.label === 'EXPLICIT' || t.explicit || false,
+    track_number: t.trackNumber || 0,
+  };
+}
+
+function mapAlbum(a) {
+  const id = idFromUri(a.uri);
+  return {
+    id,
+    name: a.name || '',
+    artist: (a.artists?.items || []).map(x => x.profile?.name || x.name || '').join(', '),
+    artists: (a.artists?.items || []).map(x => x.profile?.name || x.name || ''),
+    url: `https://open.spotify.com/album/${id}`,
+    thumbnail: bestImage(a.coverArt?.sources),
+    release_date: a.date?.year ? String(a.date.year) : '',
+    type: (a.type || '').toLowerCase(),
+  };
+}
+
+function mapArtist(a) {
+  const id = idFromUri(a.uri);
+  return {
+    id,
+    name: a.profile?.name || a.name || '',
+    url: `https://open.spotify.com/artist/${id}`,
+    thumbnail: bestImage(a.visuals?.avatarImage?.sources),
+  };
+}
+
+function mapPlaylist(p) {
+  const id = idFromUri(p.uri);
+  return {
+    id,
+    name: p.name || '',
+    description: p.description || '',
+    url: `https://open.spotify.com/playlist/${id}`,
+    thumbnail: bestImage(p.images?.items?.[0]?.sources),
+    owner: p.ownerV2?.data?.name || p.ownerV2?.data?.username || '',
+  };
+}
+
+router.get('/', async (req, res) => {
+  const { q, type = 'track', limit = 20, offset = 0 } = req.query;
+  if (!q || !q.trim()) return respondError(res, 400, 'Missing query parameter: q');
+
+  const validTypes = ['track', 'album', 'artist', 'playlist'];
+  const requestedType = type.toLowerCase().split(',')[0].trim();
+  if (!validTypes.includes(requestedType))
+    return respondError(res, 400, `Invalid type. Valid values: ${validTypes.join(', ')}`);
+
+  const parsedLimit = Math.min(Math.max(parseInt(limit) || 20, 1), 50);
+  const parsedOffset = Math.max(parseInt(offset) || 0, 0);
+  const cacheKey = `${q}|${requestedType}|${parsedLimit}|${parsedOffset}`;
+
+  const cached = cacheGet(cacheKey);
+  if (cached) return respond(res, 200, { query: q, type: requestedType, cached: true, ...cached });
+
+  try {
+    const data = await spotifyGraphQL('searchDesktop', SEARCH_HASH, {
+      searchTerm: q.trim(),
+      offset: parsedOffset,
+      limit: parsedLimit,
+      numberOfTopResults: 5,
+      includeAudiobooks: false,
+      includeArtistHasConcertsField: false,
+      includePreReleases: true,
+      includeLocalConcertsField: false,
+    });
+
+    const search = data?.data?.searchV2;
+    if (!search) throw new Error('Empty response from Spotify GraphQL');
+
+    let results = [];
+    if (requestedType === 'track') {
+      results = (search.tracksV2?.items || [])
+        .map(i => i?.item?.data || i?.track || i)
+        .filter(t => t?.id || t?.uri)
+        .map(mapTrack);
+    } else if (requestedType === 'album') {
+      results = (search.albumsV2?.items || [])
+        .map(i => i?.data || i)
+        .filter(a => a?.uri)
+        .map(mapAlbum);
+    } else if (requestedType === 'artist') {
+      results = (search.artists?.items || [])
+        .map(i => i?.data || i)
+        .filter(a => a?.uri)
+        .map(mapArtist);
+    } else if (requestedType === 'playlist') {
+      results = (search.playlists?.items || [])
+        .map(i => i?.data || i)
+        .filter(p => p?.uri)
+        .map(mapPlaylist);
+    }
+
+    if (results.length === 0)
+      return respondError(res, 404, 'No results found for your query');
+
+    const payload = { total: results.length, results };
+    cacheSet(cacheKey, payload);
+    respond(res, 200, { query: q, type: requestedType, cached: false, ...payload });
+
+  } catch (err) {
+    respondError(res, 500, err.message || 'Search failed');
+  }
+});
+
+module.exports = router;
