@@ -78,9 +78,6 @@ curl "https://sportify.xcasper.space/api/artist/7vk5e3vY1uw9plTHJAMwjN/top-track
 
 # Get a playlist (RapCaviar)
 curl "https://sportify.xcasper.space/api/playlist/37i9dQZF1DX0XUsuxWHRQd"
-
-# Get the current access token
-curl "https://sportify.xcasper.space/api/token"
 ```
 
 ---
@@ -122,14 +119,109 @@ Error responses:
 
 ---
 
-## How the Token Works
+## Using the Token
 
-The `/api/token` endpoint returns an anonymous Spotify web-player access token generated via a TOTP (Time-based One-Time Password) mechanism — the same method the Spotify web player uses internally. Tokens are:
+The `/api/token` endpoint returns an anonymous Spotify web-player access token generated internally via a TOTP mechanism — the same method the Spotify web player uses. The token is automatically refreshed every 30 minutes.
 
-- Valid for approximately 1 hour
-- Refreshed automatically every 30 minutes in the background
-- Generated with zero user authentication or developer credentials
-- Usable directly with Spotify public endpoints if you want to make your own calls
+### Token response shape
+
+```json
+{
+  "provider": "CASPER TECH",
+  "creator": "TRABY CASPER",
+  "success": true,
+  "token": "BQD3v7...",
+  "expiresIn": 3600,
+  "tokenType": "Bearer"
+}
+```
+
+| Field | Description |
+|-------|-------------|
+| `token` | The Bearer access token string |
+| `expiresIn` | Seconds until expiry (typically 3600 = 1 hour) |
+| `tokenType` | Always `"Bearer"` |
+
+### Calling Spotify's API directly with this token
+
+Once you have the token you can call any of Spotify's public `/v1` endpoints yourself — no developer account or app registration needed.
+
+**bash / curl**
+
+```bash
+# Step 1: grab the token
+TOKEN=$(curl -s https://sportify.xcasper.space/api/token \
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['token'])")
+
+# Step 2: use it with Spotify's API
+curl -H "Authorization: Bearer $TOKEN" \
+  "https://api.spotify.com/v1/search?q=Faded&type=track&limit=5"
+
+curl -H "Authorization: Bearer $TOKEN" \
+  "https://api.spotify.com/v1/tracks/3n3Ppam7vgaVa1iaRUIOKE"
+
+curl -H "Authorization: Bearer $TOKEN" \
+  "https://api.spotify.com/v1/artists/7vk5e3vY1uw9plTHJAMwjN"
+
+curl -H "Authorization: Bearer $TOKEN" \
+  "https://api.spotify.com/v1/albums/4yP0hdKOZPNshxUOjY0cZj"
+```
+
+**JavaScript (fetch)**
+
+```js
+async function getToken() {
+  const res = await fetch('https://sportify.xcasper.space/api/token');
+  const data = await res.json();
+  return data.token;
+}
+
+async function searchSpotify(query) {
+  const token = await getToken();
+  const res = await fetch(
+    `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=10`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  return res.json();
+}
+```
+
+**Python**
+
+```python
+import requests
+
+def get_token():
+    r = requests.get('https://sportify.xcasper.space/api/token')
+    return r.json()['token']
+
+def search_spotify(query):
+    token = get_token()
+    r = requests.get(
+        'https://api.spotify.com/v1/search',
+        params={'q': query, 'type': 'track', 'limit': 10},
+        headers={'Authorization': f'Bearer {token}'}
+    )
+    return r.json()
+```
+
+### Token caching
+
+The token is valid for ~1 hour. Cache it and only re-fetch when it expires to avoid unnecessary requests:
+
+```js
+let _token = null;
+let _expiresAt = 0;
+
+async function getToken() {
+  if (_token && Date.now() < _expiresAt) return _token;
+  const res = await fetch('https://sportify.xcasper.space/api/token');
+  const { token, expiresIn } = await res.json();
+  _token = token;
+  _expiresAt = Date.now() + (expiresIn - 60) * 1000; // refresh 60s before expiry
+  return _token;
+}
+```
 
 ---
 
